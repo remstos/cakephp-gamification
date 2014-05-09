@@ -1,4 +1,65 @@
-cakephp-gamification
-====================
+# Gamification
 
 CakePHP plugin to easily add gamification
+
+## Requirements
+
+- PHP5
+- CakePHP >= 2.2.5
+- Minimum PHP skills
+
+## Installation
+
+this repository should be installed in the same way as any other plugin.
+
+
+	cd somefolder/app/Plugin
+	git clone git://github.com/kemcake/cakephp-gamification.git Gamification
+
+You need to enable the plugin in your app/Config/bootstrap.php file:
+
+`CakePlugin::load('Gamification');`
+
+If you are already using `CakePlugin::loadAll();`, then this is not necessary.
+
+## Use it
+
+Simply add this to each model you want to be "gamificalbe".
+
+Currently support Add / Edit / Delete action
+
+    // app/Model/SampleModel.php
+      class SampleModel extends AppModel {
+      
+    	public $actsAs = array('Gamification.Gamificable' => array(
+                'rules' => array(
+                	array(
+                		'action' => 'Add',
+                		'points' => 20,
+                		'occurence' => 1
+                	),
+                	array(
+                		'action' => 'Edit',
+                		'points' => 10,
+                		'occurence' => 1
+                	),
+                	array(
+                		'action' => 'Delete',
+                		'points' => 5,
+                		'occurence' => 1
+                	)
+                )
+    	    )
+        );
+        
+        // Whatever your class do
+      }
+  
+
+## Author
+Rémi Santos ([KemCake](http://twitter.com/KemCake))
+
+Quentin Rubini ([Wanted33](http://twitter.com/Wanted33))
+
+
+
