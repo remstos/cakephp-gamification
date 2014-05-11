@@ -21,6 +21,8 @@ You need to enable the plugin in your `app/Config/bootstrap.php` file:
 
 If you are already using `CakePlugin::loadAll();`, then this is not necessary.
 
+You can also find the plugin on Packagist : https://packagist.org/packages/kemcake-wanted33/cakephp-gamification
+
 ## Use it
 
 Simply add this to each model you want to be `gamificable`.
