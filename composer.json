@@ -1,0 +1,26 @@
+{
+    "name": "KemCakeWanted33/cakephp-gamification",
+    "description": "CakePHP plugin to easily add gamification",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "soft", "gamification", "behavior"],
+    "homepage": "https://github.com/KemCake/cakephp-gamification",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rémi Santos",
+            "email": "santos.remi@icloud.com",
+            "homepage": "http://remisantos.fr",
+            "role": "Author"
+        },
+        {
+            "name": "Quentin Rubini",
+            "email": "quentinrubini@gmail.com",
+            "homepage": "http://quentinrubini.fr",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=5.0",
+        "CakePHP": "2.2.5"
+    }
+}
