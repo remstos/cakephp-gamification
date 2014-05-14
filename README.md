@@ -23,6 +23,15 @@ If you are already using `CakePlugin::loadAll();`, then this is not necessary.
 
 You can also find the plugin on Packagist : https://packagist.org/packages/kemcake-wanted33/cakephp-gamification
 
+# Database
+We're working on it but for now, you need to create the plugins table on your own. 
+
+Follow this model
+
+
+
+You can files in `Gamification/Migrations` if you use Migrations plugin
+	
 ## Use it
 
 Simply add this to each model you want to be `gamificable`.
