@@ -41,7 +41,8 @@ Currently support `Add` / `Edit` / `Delete` action
     // app/Model/SampleModel.php
       class SampleModel extends AppModel {
       
-    	public $actsAs = array('Gamification.Gamificable' => array(
+    	public $actsAs = array(
+    	    'Gamification.Gamificable' => array(
                 'rules' => array(
                 	array(
                 		'action' => 'Add',
